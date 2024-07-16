@@ -1,0 +1,85 @@
+/*------ Settings ------*/
+.expand {
+    --color: #a5a5b0;
+    --size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    font-size: var(--size);
+    user-select: none;
+    fill: var(--color);
+  }
+  
+  .expand .expand {
+    position: absolute;
+    animation: keyframes-fill .5s;
+  }
+  
+  .expand .compress {
+    position: absolute;
+    display: none;
+    animation: keyframes-fill .5s;
+  }
+  
+  /* ------ On check event ------ */
+  .expand input:checked ~ .expand {
+    display: none;
+  }
+  
+  .expand input:checked ~ .compress {
+    display: block;
+  }
+  
+  /* ------ Hide the default checkbox ------ */
+  .expand input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* ------ Animation ------ */
+  @keyframes keyframes-fill {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+  
+    50% {
+      transform: scale(1.2);
+    }
+  }
+
+
+
+
+  .input {
+    max-width: 580px;
+    height: 20px;
+    background-color: #fff;
+    color: #0b0b0b;
+    padding: .15rem .5rem;
+    min-height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 10px 20px -18px rgb(0, 0, 0);
+    border-bottom: 3px solid #0d14e9;
+    transition: .10s ease;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  }
+  
+  .input:hover {
+    outline: 2px solid #0d14e9;
+    max-width: 600px;
+  }
+  
+  .input:focus {
+    border-bottom: 3px solid #0d14e9;
+    border-radius: 5px 5px 2px 2px;
+    transform: scale(1.1);
+  }
+  
