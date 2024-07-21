@@ -30,9 +30,9 @@ function Header({ status }) {
 
   return (
     <>
-      <div style={{ background: 'white' }}>
+      <div style={{ background: 'white' }} >
         <Navbar className="bg-body-tertiary" style={{ borderBottom: 'solid 1px' }}>
-          <Container>
+          <Container >
             <Toolbar openSidebar={toggleSidebar} closeSidebar={closeSidebar} />
             <Backdrop sidebar={sidebar} closeSidebar={closeSidebar} />
             <Sidebar sidebar={sidebar} />
@@ -52,7 +52,7 @@ function Header({ status }) {
               </Link>
             </Navbar.Brand>
 
-            <div>
+            <aside>
               {!status && (
                 <button className="Btn" onClick={handleLogout}>
                   <div className="sign">
@@ -63,7 +63,7 @@ function Header({ status }) {
                   <div className="text">Logout</div>
                 </button>
               )}
-            </div>
+            </aside>
           </Container>
         </Navbar>
       </div>

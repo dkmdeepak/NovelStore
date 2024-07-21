@@ -23,12 +23,7 @@ function Sidebar({ sidebar }) {
             <span className="ms-3">Dashboard</span>
             </Link>
          </li>
-         <li>
-         <Link to={'/prod'}>
-            <i className="fa-solid fa-bag-shopping fa-xl" style={{color: "#001109",}} />
-            <span className="ms-3">Products</span>
-            </Link>
-         </li>
+
          <li>
          <Link to={'/auth'}>
             <i className="fa-solid fa-user-lock fa-xl" style={{color: "#001109",}} />

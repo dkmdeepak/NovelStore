@@ -6,17 +6,9 @@ import Header from './components/Header'
 import Dashboard from './pages/Dashboard'
 import Home from './pages/Home'
 import { Routes,Route } from 'react-router-dom'
-// import Userprofile from './pages/Userprofile'
-import About from './footer/resources/About'
-import Blog from './footer/resources/Blog'
-// import Files from './components/Files'
-import Wishlist from './shopping/Wishlist'
-import Carts from './shopping/Carts'
-import Product from './shopping/Product'
 import Auth from './pages/Auth'
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify'
-// import Spinner from './components/Spinners'
 import Create from './Editing/Create'
 import Edit from './Editing/Edit'
 import View from './components/View'
@@ -39,16 +31,11 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/dash' element={authStatus?<Dashboard/>:<Home/>} />
         <Route path='/auth' element={<Auth/>} />
-        <Route path='/ab' element={<About/>} />
-        <Route path='/bl' element={<Blog/>} />
         <Route path='/edt' element={<Edit/>} />
         <Route path='/crt' element={<Create/>} />
         <Route path='/dtls' element={<Details/>} />
         <Route path='/all' element={authStatus?<AllFiles/>:<Home/>} />
-        <Route path='/cart' element={<Carts/>} />
-        <Route path='/prod' element={<Product/>} />
         <Route path='/view' element={<View/>} />
-        <Route path='/wish' element={<Wishlist/>} />
         <Route path='/side' element={<Sidebar />} />
         <Route path='/select' element={<Select />} />
       </Routes>

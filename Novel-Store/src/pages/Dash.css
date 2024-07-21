@@ -25,7 +25,7 @@
     font-size: 25px;
     font-weight: bold;
     background-color: lightblue;
-    transition: all 0.5s;
+    transition: all 1s;
   }
   
   .cardd1::before {
@@ -84,7 +84,7 @@
     font-size: 25px;
     font-weight: bold;
     background-color: lightblue;
-    transition: all 0.5s;
+    transition: all 1s;
   }
   
   .cardd2::before {
@@ -142,7 +142,7 @@
     font-size: 25px;
     font-weight: bold;
     background-color: lightblue;
-    transition: all 0.5s;
+    transition: all 1s;
   }
   
   .cardd3::before {
